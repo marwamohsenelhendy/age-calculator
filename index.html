@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <section>
+     <div class="container">
+        <form id="ageform">
+            <div class="form-section">
+                <label for="day">day</label>
+                <input type="text" id="day" placeholder="dd" min="1" max="31">
+                 <span class="error-day">this field is required</span>
+            </div>
+            <div class="form-section">
+                <label for="month">month</label>
+                <input type="text" id="month" placeholder="mm" min="1" max="12" >
+                <span class="error-month">this field is required</span>
+            </div>
+            <div class="form-section">
+                <label for="year">year</label>
+                <input type="text" id="year" placeholder="yyyy"  min="1990" max="2023" >
+                <span class="error-year">this field is required</span>
+            </div>
+        </div>
+        <div class="form-content">
+            <hr>
+                <button type="submit" class="submit-btn"><img src="./image/icon-arrow.svg" alt=""></button>
+           
+        </div>
+        <div class="title">
+            <h1><strong class="output-day">--</strong>years</h1>
+            <h1><strong class="output-month">--</strong>months</h1>
+            <h1><strong class="output-year">--</strong>days</h1>
+        </div>
+        </form>
+     </div>
+    </section>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
